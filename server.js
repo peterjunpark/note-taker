@@ -3,7 +3,7 @@ const path = require("path");
 const notes = require("./routes/notes.js");
 
 const app = express();
-const port = 3333;
+const PORT = process.env.PORT || 3333;
 
 // Middleware for parsing.
 app.use(express.static("public"));
@@ -21,4 +21,4 @@ app.get("/notes", (req, res) => {
 // Notes API routes.
 app.use("/api/notes", notes);
 
-app.listen(port, () => console.log(`👂 Server listening on port ${port} 👂`));
+app.listen(PORT, () => console.log(`👂 Server listening on port ${PORT} 👂`));
