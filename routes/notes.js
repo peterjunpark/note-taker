@@ -28,7 +28,6 @@ notes.post("/", (req, res) => {
 notes.delete("/:id", (req, res) => {
   data = data.filter((note) => note.id !== req.params.id);
   updateDB(data);
-  console.log(data);
   res.json(data);
 });
 
