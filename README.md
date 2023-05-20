@@ -3,10 +3,12 @@
 
 ## Description
 ### What is this?
-A [web application](https://sheltered-coast-99428.herokuapp.com/) to help you write and store text notes.
+A lightweight note-taking application to help you write and store text notes.
 
 ### How does it work?
+The Note Taker's backend is built on Node.js and Express for routing to serve content to the front-end while handling retrieving, creating, and deleting notes.
 
+The Note Taker is database-less; it reads and updates a JSON file stored on the server to perform its core functionality.
 
 ## Installation
 N/A
